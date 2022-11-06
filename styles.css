@@ -1,0 +1,121 @@
+:root{
+    --cream : hsl(30, 38%, 92%); 
+    --dark-cyan :  hsl(158, 36%, 37%);
+
+    --very-dark-blue : hsl(212, 21%, 14%);
+    --dark-gray-blue : hsl(228, 12%, 48%);
+    --white : hsl(0, 0%, 100%);
+
+}
+
+body {
+    margin: 0;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    min-height:100vh;
+    background-color: var(--cream);
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image-item{
+    height: 100%;
+    width: 100%;
+}
+.channel{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.item-description{
+    background-color: var(--white);
+}
+
+.item-type{
+    display: inline-block;
+    font-family: Montserrat;
+    color: var(--dark-gray-blue);
+    letter-spacing: 5px;
+    padding: 20px;
+    font-size: 0.625em;
+    
+}
+
+h1{
+    margin: 0;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 32px;
+    padding: 0 20px;
+    color: var(--very-dark-blue);
+   
+}
+p{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: var(--dark-gray-blue);
+    font-size: 0.875em;
+    line-height: 23px;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.prices{
+    display: flex;
+    align-items: center;
+}
+.discounted-price,
+.original-price{
+    display: inline-block;
+}
+.discounted-price{
+    color: var(--dark-cyan);
+    font-family: Fraunces;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 19px;
+    line-height: 32px;
+
+}
+.original-price{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: var(--dark-gray-blue);
+    margin-left: 19px;
+    line-height: 23px;
+    padding: 0 20px;
+
+
+}
+.cart{
+    width: 14.39px;
+    height: 16px;
+    transform: scaleX(-1);
+
+}
+button{
+    display: block;
+    width: 236px;
+    height: 48px;
+    margin: 30px auto;
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: var(--white);
+}
